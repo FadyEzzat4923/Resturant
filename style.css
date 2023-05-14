@@ -1655,7 +1655,7 @@ a:hover {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    margin: 100px 0px 100px -8px;
+    margin: 100px auto 100px auto;
   }
 
   .inform {
