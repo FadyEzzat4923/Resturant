@@ -3,9 +3,13 @@
   scroll-behavior: smooth;
 }
 
+body {
+  margin: auto;
+}
+
 .header {
-  padding: 8px 16px 0px 0px;
-  margin: -8px 0px 0px -8px;
+  /* padding: 8px 16px 0px 0px; */
+  /* margin: -8px 0px 0px -8px; */
   width: 100%;
   height: 120vh;
   background-image: url(./img/bg-hero.jpg);
@@ -17,13 +21,15 @@
   height: 120vh;
   background-color: #0f172bea;
   color: white;
-  padding: 8px 16px 0px 0px;
-  margin-top: -8px;
+  /* padding: 8px 16px 0px 0px; */
+  /* margin-top: -8px; */
 }
 
 .logo-icon {
   position: fixed;
-  margin-top: -8px;
+  /* margin-top: -8px; */
+  top: 0;
+  left: 0;
   height: 10vh;
   width: 100%;
   display: flex;
@@ -371,6 +377,7 @@
   align-content: center;
   font-weight: bold;
   text-align: center;
+  padding-bottom: 50px;
   margin-bottom: 300px;
 }
 
@@ -458,6 +465,7 @@
   width: auto;
   height: 15vh;
   display: grid;
+  margin: 10px 0 10px 0 ;
   grid-template-columns: repeat(2, auto);
 }
 
@@ -470,6 +478,7 @@
 .titlefm {
   margin-left: 10px;
   font-size: 20px;
+  font-weight: bold;
   text-align: left;
   font-family: sans-serif;
 }
@@ -500,10 +509,10 @@
 }
 
 .booking {
-  margin-top: 50px;
+  margin-top: 200px;
   height: 67vh;
-  width: 101.1%;
-  margin-left: -8px;
+  width: 100%;
+  /* margin-left: -8px; */
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 300px;
@@ -668,7 +677,7 @@ select {
 /* Our Teem */
 .chefs {
   margin-top: 200px;
-  height: 110vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -685,15 +694,21 @@ select {
 
 .chef-icon {
   width: auto;
-  height: 40vh;
+  height: 40vh ;
   text-align: center;
   border-radius: 20px;
   transition: 0.4s;
   overflow: hidden;
-  margin: auto;
+  margin: 20px  auto  20px auto;
   display: grid;
   grid-template-columns: auto;
   cursor: default;
+}
+.chef-icon:hover {
+  background-color: white;
+  color: #000000;
+  padding-bottom: 80px;
+  transform: scale(1.05);
 }
 
 .big-chef {
@@ -739,27 +754,44 @@ select {
   transform: scale(1.1);
 }
 
-.chef-icon:hover {
-  background-color: white;
-  color: #000000;
-  height: 48vh;
-  transform: scale(1.05);
-}
 
 .chef-icon:hover p {
   color: #000000;
 }
 
+.links {
+  width: auto;
+  margin: 10px auto  0 auto;
+  /* margin-top: 3vh; */
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.link {
+  text-align: center;
+  line-height: 32px; 
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: orange;
+  margin: 5px;
+  cursor: pointer;
+}
+
 .footer {
   height: auto;
-  width: 101.1%;
+  width: 100%;
   background-color: #0F172B;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-content: center;
-  margin-left: -8px;
-  margin-bottom: -8px;
+  /* margin-left: -8px; */
+  /* margin-bottom: -8px; */
   padding-top: 30px;
 }
 
@@ -939,29 +971,6 @@ select {
   position: absolute;
   margin: auto;
   margin-top: 36vh;
-}
-
-.links {
-  width: auto;
-  margin: auto;
-  margin-top: 3vh;
-  height: auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: space-around;
-}
-
-.link {
-  text-align: center;
-  line-height: 35px;
-  color: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: orange;
-  margin: 2px;
-  cursor: pointer;
 }
 
 .linking {
@@ -1328,15 +1337,6 @@ a:hover {
       grid-area: down;
     }
 
-    .footer {
-      margin: 0 0 -8px -8px;
-      width: 104.1%;
-    }
-
-    .booking {
-      width: 104.1%;
-    }
-
     .image-head {
       grid-area: up;
     }
@@ -1655,7 +1655,7 @@ a:hover {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    margin: 100px auto 100px auto;
+    margin: 200px auto 100px auto;
   }
 
   .inform {
@@ -1796,6 +1796,9 @@ a:hover {
   .videob {
     height: 38vh;
   }
+    .titlefm {
+      font-size: 16px;
+    }
 }
 
 @media (max-width : 380px) {
