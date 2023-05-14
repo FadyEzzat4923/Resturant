@@ -1799,6 +1799,9 @@ a:hover {
     .titlefm {
       font-size: 16px;
     }
+    .chef-icon{
+      height: auto;
+    }
 }
 
 @media (max-width : 380px) {
