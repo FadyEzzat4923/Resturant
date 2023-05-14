@@ -465,7 +465,7 @@ body {
   width: auto;
   height: 15vh;
   display: grid;
-  margin: 10px 0 10px 0 ;
+  margin: 10px 0 10px 0;
   grid-template-columns: repeat(2, auto);
 }
 
@@ -694,16 +694,17 @@ select {
 
 .chef-icon {
   width: auto;
-  height: 40vh ;
+  height: 40vh;
   text-align: center;
   border-radius: 20px;
   transition: 0.4s;
   overflow: hidden;
-  margin: 20px  auto  20px auto;
+  margin: 20px auto 20px auto;
   display: grid;
   grid-template-columns: auto;
   cursor: default;
 }
+
 .chef-icon:hover {
   background-color: white;
   color: #000000;
@@ -761,7 +762,7 @@ select {
 
 .links {
   width: auto;
-  margin: 10px auto  0 auto;
+  margin: 10px auto 0 auto;
   /* margin-top: 3vh; */
   height: auto;
   display: flex;
@@ -772,7 +773,7 @@ select {
 
 .link {
   text-align: center;
-  line-height: 32px; 
+  line-height: 32px;
   color: white;
   width: 30px;
   height: 30px;
@@ -1796,12 +1797,18 @@ a:hover {
   .videob {
     height: 38vh;
   }
-    .titlefm {
-      font-size: 16px;
-    }
-    .chef-icon{
-      height: auto;
-    }
+
+  .titlefm {
+    font-size: 16px;
+  }
+
+  .chef-icon {
+    height: auto;
+  }
+
+  .chef-icon:hover {
+    padding-bottom: 5px;
+  }
 }
 
 @media (max-width : 380px) {
