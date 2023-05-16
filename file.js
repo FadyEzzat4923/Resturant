@@ -1,5 +1,3 @@
-
-
 // ========== Declearation ==================
 let logoicon = document.querySelector(".logo-icon");
 let header = document.querySelector(".header-main");
@@ -140,36 +138,6 @@ window.onscroll = () => {
             ele.style.cssText = "animation: appear  1.5s ease; display : flex"
         })
     }
-    // }
-    // else {
-    //     chefimg.forEach((ele) => {
-    //         ele.style.cssText = "animation: appear  1.5s ease; display : flex"
-    //     });
-    //     for (let i = 0; i < 4; i++) {
-    //         oneimage[i].style.cssText = "animation: appear  1.5s ease;";
-    //     }
-    //     qualitycard.forEach((e) =>
-    //         e.style.marginTop = "0"
-    //     );
-    //     cheficon.forEach((e) =>
-    //         e.style.marginTop = "0"
-    //     );
-    //     mostfm[1].style.marginTop = "0px";
-    //     textfm[1].style.marginTop = "0px";
-    //     booking.style.marginTop = "0px";
-    //     listfm.forEach((e) => {
-    //         e.style.marginTop = "0";
-    //     });
-    //     populerfm.style.marginTop = "0";
-    //     mostfm[0].style.marginTop = "0";
-    //     textfm[1].style.marginTop = "0px";
-    //     booking.style.marginTop = "0px";
-    //     e.style.marginTop = "0";
-    //     populerfm.style.marginTop = "0";
-    //     mostfm[0].style.marginTop = "0";
-    //     textfm[0].style.marginTop = "0";
-    //     aboutUstext.style.marginTop = "0px";
-    // }
 }
 btn.forEach((e) => {
     e.onclick = () => {
@@ -200,7 +168,7 @@ pa.onclick = () => {
 }
 // ========== scrolling in Food List ========
 scrolling[0].onclick = () => {
-    hrscrollfm.style.marginLeft = "0";
+    hrscrollfm.style.cssText = "  left: 0%; transform: translateX(0%); ";
     if (listfm[1].style.display === 'grid' || listfm[2].style.display === 'grid') {
         listfm[0].style.cssText = " display : grid ;  animation: appear  0.6s ease;";
     }
@@ -208,25 +176,13 @@ scrolling[0].onclick = () => {
     listfm[2].style.cssText = "display : none ;";
 }
 scrolling[1].onclick = () => {
-    if (document.body.scrollWidth > 530) {
-        hrscrollfm.style.marginLeft = "200px";
-
-    }
-    else {
-        hrscrollfm.style.marginLeft = "170px";
-    }
+    hrscrollfm.style.cssText = "  left: 50%; transform: translateX(-50%); ";
     listfm[0].style.cssText = "display : none ; ";
     listfm[1].style.cssText = "display : grid ; grid ; animation: appear  0.6s ease;";
     listfm[2].style.cssText = "display : none ; ";
 }
 scrolling[2].onclick = () => {
-    if (document.body.scrollWidth > 550) {
-        hrscrollfm.style.marginLeft = "400px";
-
-    }
-    else {
-        hrscrollfm.style.marginLeft = "330px";
-    }
+    hrscrollfm.style.cssText = "  left: 100%; transform: translateX(-100%); ";
     listfm[0].style.cssText = "display : none ;  ";
     listfm[1].style.cssText = "display : none ; ";
     listfm[2].style.cssText = "display : grid ; grid ; animation: appear  0.6s ease;";

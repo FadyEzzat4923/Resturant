@@ -10,8 +10,10 @@ listfm[2].style.cssText = "display : none ;";
 let bar = document.querySelector(".head-btn")
 window.onscroll = ()=>{
 	       if (window.scrollY >= '80') {
-        logoicon.style.cssText = "background-color:#000000DE;";
-        bar.style.cssText = "background-color:#000000DE;";
+        logoicon.style.cssText = "background-color:#000000DE;"
+;
+        bar.style.cssText = "background-color:#000000DE;"
+;
     }
     else {
         logoicon.style.cssText = "background-color:#00000000;  ";
@@ -42,22 +44,22 @@ btn.onclick = () =>{
 	window.open("booking.html","_self");
 }
 // ========== scrolling in Food List ========
-scrolling[0].onclick = ()=>{
-    hrscrollfm.style.marginLeft = "0px";
-    if (listfm[1].style.display === 'grid' || listfm[2].style.display === 'grid'){
-    listfm[0].style.cssText = " display : grid ;  animation: appear  0.6s ease;";  
-}  
+scrolling[0].onclick = () => {
+    hrscrollfm.style.cssText = "  left: 0%; transform: translateX(0%); ";
+    if (listfm[1].style.display === 'grid' || listfm[2].style.display === 'grid') {
+        listfm[0].style.cssText = " display : grid ;  animation: appear  0.6s ease;";
+    }
     listfm[1].style.cssText = " display : none ;";
     listfm[2].style.cssText = "display : none ;";
 }
 scrolling[1].onclick = () => {
-    hrscrollfm.style.marginLeft = "200px";
+    hrscrollfm.style.cssText = "  left: 50%; transform: translateX(-50%); ";
     listfm[0].style.cssText = "display : none ; ";
     listfm[1].style.cssText = "display : grid ; grid ; animation: appear  0.6s ease;";
     listfm[2].style.cssText = "display : none ; ";
 }
 scrolling[2].onclick = () => {
-    hrscrollfm.style.marginLeft = "400px";
+    hrscrollfm.style.cssText = "  left: 100%; transform: translateX(-100%); ";
     listfm[0].style.cssText = "display : none ;  ";
     listfm[1].style.cssText = "display : none ; ";
     listfm[2].style.cssText = "display : grid ; grid ; animation: appear  0.6s ease;";
